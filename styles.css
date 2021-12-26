@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+header {
+    background-image: linear-gradient(120deg, #339900 0%, #339900 30%, #55ff00 100%);
+    padding: 30px 20px;
+}
+
+.logo {
+    float: left;
+    width: 280px;
+    height: 90px;
+    background-image: url('../Sabor-e-Castanhas/images/logo.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    transform: translateX(15%);
+}    
+
+.menu {
+    float: right;
+    padding: 25px 80px;
+    transform: translateY(15%);
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #121212;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.cover-form{
+    width: 100%;
+}
+
+.bg{
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../Sabor-e-Castanhas/images/nuts.jpg');
+}
+
+.form-container{
+    transform: translateY(30%) translateX(26%);
+    width: 1000px;
+    height: 80%;
+    position: center;
+    z-index: 2;
+}
+
+.form-container h2{
+    font-weight: normal;
+    padding: 30px 30px 30px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-family: 'Righteous', cursive;
+    background-color: #1212127e;
+    float: right;
+    text-align: center;
+}
+
+section.chamada{
+    z-index: 1;
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    text-align: center;
+
+}
+
+section.chamada .container{
+    padding: 50px 0;
+    background-image: linear-gradient(120deg, #339900 0%, #339900 20%, #55ff00 100%);
+}
+
+section.chamada h2{
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: #FFF1F1;
+    font-size: 46px;
+    font-weight: normal;
+    font-family: 'Righteous', cursive;
+
+}
+
+section.chamada h3{
+    color: #FFF1F1;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+    font-family: 'Righteous', cursive;
+
+}
+
+
