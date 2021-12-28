@@ -4,50 +4,61 @@
     box-sizing: border-box;
 }
 
-.clear{
+html,
+body {
+    height: 100%;
+    background-color: white;
+}
+
+/*DIVS GERAIS*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear {
     clear: both;
 }
 
 header {
-    background-image: linear-gradient(120deg, #339900 0%, #339900 30%, #55ff00 100%);
-    padding: 30px 20px;
-    max-width: 100%;
+    background-image: linear-gradient(120deg, rgb(51, 153, 0) 50%, rgb(85, 255, 0) 100%);
+    padding: 22px 5% 22px 5%;
 }
+
 
 .logo {
     float: left;
     width: 280px;
     height: 90px;
     background-image: url('../Sabor-e-Castanhas/images/logo.png');
-    background-size: 100% auto;
+    background-size: 100%;
     background-repeat: no-repeat;
-    transform: translateX(15%);
-}    
+}
 
-.menu {
+.menu{
     float: right;
-    padding: 25px 80px;
-    transform: translateY(15%);
 }
 
 .menu li{
     display: inline-block;
-    margin: 0 20px;
+    margin: 40px 20px;
 }
 
 .menu a{
+    padding: 0 15px;
     text-decoration: none;
-    color: #121212;
-    font-family: 'Fira Sans', sans-serif;
-
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .cover-form{
     width: 100%;
+    padding: 0;
 }
 
 .bg{
-    max-width: 100%;
     height: 700px;
     background-position: center;
     background-size: cover;
@@ -55,22 +66,80 @@ header {
 }
 
 .form-container{
-    transform: translateY(30%) translateX(26%);
-    width: 1000px;
+    float: right;
+    margin-right: 40px;
+    width: 400px;
     height: 80%;
-    position: center;
+    position: relative;
+    top: 5%;
+    background-color: #191a1975;
     z-index: 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .form-container h2{
     font-weight: normal;
-    padding: 30px 30px 30px 40px;
-    color: rgb(255, 255, 255);
-    font-size: 70px;
-    font-family: 'Righteous', cursive;
-    background-color: #1212127e;
-    float: right;
-    text-align: center;
+    padding: 25px 15px;
+    color: white;
+    font-size: 18px;
+
+    background-color: #191a19a4;
+}
+
+.form-container form{
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container form p{
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: white;
+}
+
+.form-wrapper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form .form-wrapper p1{
+    color: greenyellow;
+}
+
+.form-container:last-child{
+    margin-top: 20px;
+}
+
+.form-container form input[type=submit]{
+    width: 100%;
+    background-color: #42c700;
+    color: #FFF1F1;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    font-size: 17px;
+    box-shadow: none;
+    border: 0 none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+
+.form-container form input[type=submit]:hover{
+    background-color: #50ec02;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 section.chamada{
@@ -85,7 +154,7 @@ section.chamada{
 
 section.chamada .container{
     padding: 50px 0;
-    background-image: linear-gradient(120deg, #339900 0%, #339900 20%, #55ff00 100%);
+    background-color: #42c700;
 }
 
 section.chamada h2{
@@ -95,37 +164,34 @@ section.chamada h2{
     color: #FFF1F1;
     font-size: 46px;
     font-weight: normal;
-    font-family: 'Righteous', cursive;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 section.chamada h3{
     color: #FFF1F1;
     font-size: 20px;
     margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
-    font-family: 'Righteous', cursive;
-
 }
 
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 510px){
+    header{
+        text-align: center;
 
-    .logo {
-        float: left;
-        width: 80px;
-        height: 50px;
-        background-image: url('../Sabor-e-Castanhas/images/logo.png');
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        transform: translateX(15%);
-    }    
+    }
 
-    .bg{
-        max-width: 80%;
-        height: 700px;
-        background-position: center;
-        background-size: cover;
-        background-image: url('../Sabor-e-Castanhas/images/nuts.jpg');
+    [class^="logo"]{
+        margin-top:10px;
+        display: inline-block;
+        float: none;
+    }
+
+    [class^="menu"]{
+        margin-top:10px;
+        display: inline-block;
+        float: none;
     }
 }
+/*******************************************************************/
