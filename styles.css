@@ -179,7 +179,7 @@ section.chamada h3{
     z-index: 2;
     position: relative;
     top: -160px;
-    left: 47%;
+    left: 46.5%;
     width: 120px;
     height: 120px;
     background-image: url('../Sabor-e-Castanhas/images/logo-1.png');
@@ -216,12 +216,62 @@ section.chamada h3{
     padding: 10px 25px;
 }
 
-.container-single img {
+.container-single .imagem-1 img {
     background-image: url('../Sabor-e-Castanhas/images/foto-1.jpg');
     width: 400px;
     height: 400px;
     border-radius: 50%;
     border: 9px solid #339900;
+    background-size: cover;
+}
+
+.container-single .imagem-2 img {
+    background-image: url('../Sabor-e-Castanhas/images/foto-2.jpg');
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 9px solid #339900;
+    background-size: cover;
+}
+
+.container-single .imagem-3 img{
+    background-image: url('../Sabor-e-Castanhas/images/foto-3.jpg');
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 9px solid #339900;
+    background-size: cover;
+}
+
+.text-container-single {
+    font-family: 'Roboto', sans-serif;
+    color: #191A19;
+}
+
+.text-container-single h2{
+    padding: 30px 0;
+}
+
+.text-container-single p{
+    text-align: center;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1254px){
+    .arrow{
+            z-index: 2;
+            position: relative;
+            top: -160px;
+            left: 44%;
+            width: 120px;
+            height: 120px;
+            background-image: url('../Sabor-e-Castanhas/images/logo-1.png');
+            background-size: 100% 100%;
+        }
+
+    .container-single{
+        width: 100%;
+    }
 }
 
 
@@ -229,6 +279,17 @@ section.chamada h3{
     header{
         text-align: center;
 
+    }
+
+    .arrow{
+        z-index: 2;
+        position: relative;
+        top: -160px;
+        left: 39%;
+        width: 120px;
+        height: 120px;
+        background-image: url('../Sabor-e-Castanhas/images/logo-1.png');
+        background-size: 100% 100%;
     }
 
     [class^="logo"]{
@@ -242,6 +303,8 @@ section.chamada h3{
         display: inline-block;
         float: none;
     }
+
+    
 
 
 }
