@@ -257,6 +257,48 @@ section.chamada h3{
     font-size: 18px;
 }
 
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico{
+    background-color: #42c700;
+    padding: 40px;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.item-2-mosaico-1{
+    background-color: #73ff2e;
+    padding: 40px;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img{
+    width: 220px;
+}
+
+footer p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 8px;
+}
 @media screen and (max-width: 1254px){
     .arrow{
             z-index: 2;
@@ -270,6 +312,25 @@ section.chamada h3{
         }
 
     .container-single{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-1-mosaico{
+        height: 400px;
+        width: 100%;
+    }
+
+    .item-2-mosaico{
+        width: 100%;
+    }
+
+    .item-2-mosaico-1{
         width: 100%;
     }
 }
