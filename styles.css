@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(120deg, rgb(51, 153, 0) 50%, rgb(85, 255, 0) 100%);
+    background-image: linear-gradient(120deg, #339900 50%, rgb(85, 255, 0) 100%);
     padding: 22px 5% 22px 5%;
 }
 
@@ -153,7 +153,7 @@ section.chamada{
 }
 
 section.chamada .container{
-    padding: 50px 0;
+    padding: 50px 0 80px 0;
     background-color: #42c700;
 }
 
@@ -175,6 +175,55 @@ section.chamada h3{
     font-weight: normal;
 }
 
+.arrow {
+    z-index: 2;
+    position: relative;
+    top: -160px;
+    left: 47%;
+    width: 120px;
+    height: 120px;
+    background-image: url('../Sabor-e-Castanhas/images/logo-1.png');
+    background-size: 100% 100%;
+}
+
+.section-1 {
+    padding: 0 2% 70px 2%;
+}
+
+.section-1 h2{
+    top: -30px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #191A19;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container-single {
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+}
+
+.container-single p{
+    display: inline-block;
+    text-align: justify;
+    padding: 10px 25px;
+}
+
+.container-single img {
+    background-image: url('../Sabor-e-Castanhas/images/foto-1.jpg');
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 9px solid #339900;
+}
+
 
 @media screen and (max-width: 510px){
     header{
@@ -193,5 +242,7 @@ section.chamada h3{
         display: inline-block;
         float: none;
     }
+
+
 }
 /*******************************************************************/
